@@ -1,0 +1,20 @@
+Name:           marko-chain
+Version:        1.0.0
+Cabal-Version:  >= 1.2
+License:        BSD2
+License-File:   LICENSE
+Author:         Toon Nolten
+Homepage:       https://github.com/toonn/marko-chain
+Category:       IRC, NLP
+Synopsis:       A markov chain IRC bot
+Build-Type:     Simple
+
+Executable marko-chain
+  Main-Is:       MarkoChain.hs
+  Build-Depends: base >= 4.10 && <4.11
+               , containers >= 0.5.8.1 && <0.6
+               , optparse-applicative
+               , text
+               , mtl
+               , network
+               , MonadRandom
